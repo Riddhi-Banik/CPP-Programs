@@ -30,7 +30,7 @@ int main() {
     for (int i : answer){
         cout << i << " ";
     } cout << "]\n";
-
+    
     string _;
     cout << "Press Enter to Exit..."; cin.ignore();cin.get();
     return 0;

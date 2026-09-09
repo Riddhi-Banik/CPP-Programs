@@ -48,13 +48,12 @@ unsigned int asciifier(string word) {
     unsigned int res = 0;
 
     reverse(word.begin(), word.end());;
-
-    unsigned int counter = 0;unsigned int conbase = 1;
+    unsigned int conbase = 1;
 
     for (char c : word){if(int(c) == 32){continue;}
         conbase *= 26;
         int cnt = static_cast<int>(c) - 64;
-        res = (res + (cnt)*(conbase*(++counter)));
+        res = (res + (cnt)*(conbase));
     }
     return (res/conbase);
 };

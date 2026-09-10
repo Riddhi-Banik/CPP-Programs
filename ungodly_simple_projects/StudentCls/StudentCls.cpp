@@ -165,6 +165,7 @@ int main() {
         else
             RAM = json::parse(DB_FILE);
     } else {
+        cout<<"Couldn\'t open ("+filename+")... Loading empty Dataset";
         RAM = json::object();
     }
     
